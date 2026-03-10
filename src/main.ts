@@ -1,4 +1,5 @@
-import { decoratorsIntro } from "./decorators/pokemonClass";
+import { decoratorsIntro } from "./decorators/decoratorsIntro";
+import { factoryDecorators } from "./decorators/factoryDecorators";
 import "./style.css";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
@@ -8,3 +9,4 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
 `;
 
 decoratorsIntro();
+factoryDecorators();
