@@ -58,7 +58,7 @@ export const methodDecorators = (): void => {
   const hulk: Hero = new HeroClass("Bruce Banner", "Hulk");
   console.log("Hulk:", hulk);
 
-  hulk.saveHeroId(-50);
+  hulk.saveHeroId(50);
 
   console.log("--- END METHOD DECORATORS FILE ---");
 };
