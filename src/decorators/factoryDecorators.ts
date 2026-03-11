@@ -17,7 +17,7 @@ function conditionalPrintToConsole(
   return () => {console.log("¡Hola Mundo!")};
 }
 
-@conditionalPrintToConsole()
+@conditionalPrintToConsole(true)
 class HeroClass implements Hero {
   public realName: string;
   public name: string;
