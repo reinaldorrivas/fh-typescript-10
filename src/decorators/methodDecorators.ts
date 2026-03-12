@@ -4,22 +4,6 @@ interface Hero {
   saveHeroId: (id: number) => void;
 }
 
-function printToConsole(constructor: Function): void {
-  console.log(constructor);
-}
-
-function conditionalPrintToConsole(
-  print: boolean = false,
-): ((constructor: Function) => void) | (() => void) {
-  if (print) {
-    return printToConsole;
-  }
-
-  return () => {
-    console.log("¡Hola Mundo!");
-  };
-}
-
 function checkValidHeroId() {
   return function (
     target: Hero,
@@ -38,7 +22,6 @@ function checkValidHeroId() {
   };
 }
 
-@conditionalPrintToConsole()
 class HeroClass implements Hero {
   public realName: string;
   public name: string;
